@@ -1,0 +1,114 @@
+
+  :root {
+    /* Färger */
+    --color-heading: #42446E;
+    --color-text: #666;
+    --color-text-muted: #a7a7a7;
+    --color-text-strong: #000;
+    --color-text-content: #666666;
+
+    --color-bg: #fff;
+    --color-surface: #fff;
+
+    --gradient-primary: linear-gradient(to right, #13b0f5 2%, #e70faa 100%);
+
+    --shadow-card: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
+
+    --color-badge-bg: #D7FFe0;
+    --color-badge-text: #018c0f;
+
+    /* Typsnitt */
+    --font-family-poppins: "Poppins", sans-serif;
+    --font-family-dm-sans: "DM Sans", sans-serif;
+
+    --font-heading: var(--font-family-poppins);
+    --font-body: var(--font-family-poppins);
+    --font-nav: var(--font-family-dm-sans);
+
+    /* Text storlekar */
+    --font-size-100: 0.563rem; 
+    --font-size-200: 0.75rem;
+    --font-size-300: 1rem;
+    --font-size-400: 1.125rem;
+    --font-size-500: 1.25rem;
+    --font-size-600: 1.5rem;
+    --font-size-700: 2.625rem;
+    --font-size-800: 3.625rem;
+
+    /* Roll */
+    --font-size-label: var(--font-size-100);
+    --font-size-small: var(--font-size-200);
+    --font-size-body: var(--font-size-300);
+    --font-size-heading-4: var(--font-size-400);
+    --font-size-heading-3: var(--font-size-500);
+    --font-size-heading-2: var(--font-size-600);
+    --font-size-heading-1: var(--font-size-700);
+
+    /* Spacing */
+
+    --space-1: 0.5rem; /* 8px */
+    --space-2: 0.75rem; /* 12pxpx */
+    --space-3: 1rem; /* 16px */
+    --space-4: 1.25rem; /* 20px */
+    --space-5: 2rem; /* 32px */
+    --space-6: 2.375rem; /* 38px */
+    --space-7: 3.875rem; /* 62px */
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    color: var(--color-text);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: var(--font-size-heading-1);
+  }
+  h2 {
+    font-size: var(--font-size-heading-2);
+    margin-bottom: var(--space-6);
+  }
+  h3 {
+    font-size: var(--font-size-heading-3);
+    margin-bottom: var(--space-4);
+  }
+  h4 {
+    font-size: var(--font-size-heading-4);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-heading);
+    outline-offset: 3px;
+  }
+
+:root[data-theme="dark"] {
+
+    color-scheme: dark;
+
+    --color-bg: #191919;
+    --color-surface: #363636;
+    --color-heading: #CCCCCC;
+    --color-text: #a7a7a7;
+    --color-text-content: #CCCCCC; /* I projekt korten */
+    --color-text-strong: #fff;
+}
+
+@media (min-width: 60em) {
+  :root {
+    --font-size-body: var(--font-size-400);
+    --font-size-heading-4: var(--font-size-500);
+    --font-size-heading-3: var(--font-size-600);
+    --font-size-heading-2: var(--font-size-700);
+    --font-size-heading-1: var(--font-size-800);
+  }
+}
