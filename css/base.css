@@ -10,7 +10,7 @@
     --color-bg: #fff;
     --color-surface: #fff;
 
-    --gradient-primary: linear-gradient(to right, #13b0f5 2%, #e70faa 100%);
+    --color-primary: linear-gradient(to right, #13b0f5 2%, #e70faa 100%);
 
     --shadow-card: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
 
@@ -34,7 +34,6 @@
     --font-size-600: 1.5rem;
     --font-size-700: 2.625rem;
     --font-size-800: 3.625rem;
-
     /* Roll */
     --font-size-label: var(--font-size-100);
     --font-size-small: var(--font-size-200);
@@ -42,10 +41,9 @@
     --font-size-heading-4: var(--font-size-400);
     --font-size-heading-3: var(--font-size-500);
     --font-size-heading-2: var(--font-size-600);
-    --font-size-heading-1: var(--font-size-700);
+    --font-size-heading-1: var(--font-size-600);
 
     /* Spacing */
-
     --space-1: 0.5rem; /* 8px */
     --space-2: 0.75rem; /* 12pxpx */
     --space-3: 1rem; /* 16px */
@@ -53,6 +51,9 @@
     --space-5: 2rem; /* 32px */
     --space-6: 2.375rem; /* 38px */
     --space-7: 3.875rem; /* 62px */
+    /* Roll */
+    --section-space-block: var(--space-5);
+    --section-space-inline: var(--space-4);
   }
 
   body {
@@ -110,6 +111,9 @@
     --font-size-heading-3: var(--font-size-600);
     --font-size-heading-2: var(--font-size-700);
     --font-size-heading-1: var(--font-size-800);
+
+    --section-space-inline: var(--space-7);
+    --section-space-block: var(--space-7);
   }
 }
 
@@ -119,4 +123,19 @@
 .container {
   max-width: 1200px;
   margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-space-block);
+  padding-inline: var(--section-space-inline);
+}
+.visually-hidden {
+  border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	width: 1px;
+	white-space: nowrap;
 }
