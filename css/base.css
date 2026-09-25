@@ -112,3 +112,11 @@
     --font-size-heading-1: var(--font-size-800);
   }
 }
+
+
+/* Layout-styling */
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
