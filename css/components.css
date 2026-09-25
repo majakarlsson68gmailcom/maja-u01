@@ -1,10 +1,10 @@
 
 /* Navigationsbar */
-.nav-container {
+ .nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    
     padding: var( --space-5);
     
     .logo {
@@ -13,8 +13,10 @@
     }
 }
 
+
+
 /* Mobil */
-.nav-mobile-container {
+ .nav-mobile-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +47,7 @@
 
     a {
         text-decoration: none;
+        white-space: nowrap;
     }
 }
 
@@ -62,12 +65,15 @@
 }
 
 /* Öppna/stänga menyn */
+
 .nav-container.is-open .nav-list,
 .nav-container.is-open .social-list {
     display: flex;
 }
 
 /* Desktop */
+
+
 
 @media (min-width: 56rem){
 
@@ -81,7 +87,6 @@
     .nav-container {
         flex-direction: row;
         margin-top: calc(var(--space-4) * 3);
-        border: 1px solid;
         align-items: center;
     }
 
@@ -91,7 +96,6 @@
 
     .nav-list {
         align-items: center;
-        margin-inline: auto;
         flex-direction: row;
         width: fit-content;
         gap: var(--space-6);
@@ -111,4 +115,11 @@
         max-height: 32px;
         aspect-ratio: 1 / 1;
     }
+
+    .main-nav {
+    margin-left: auto;
+    margin-right: var(--space-5);
 }
+}
+
+
