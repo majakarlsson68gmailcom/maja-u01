@@ -1,3 +1,4 @@
+
 .nav-container {
     display: flex;
     flex-direction: column;
@@ -17,8 +18,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 1px solid;
-    
 }
 
 .nav-toggle {
@@ -57,6 +56,12 @@
 .social-icons {
     min-width: 28px;
     min-height: 28px;
+}
+
+/* Öppna/stänga menyn */
+.nav-container.is-open .nav-list,
+.nav-container.is-open .social-list {
+    display: flex;
 }
 
 /* Desktop */
