@@ -1,3 +1,5 @@
+
+/* Hero sektion */
 .hero {
     min-height: 80dvh;
     display: flex;
@@ -5,19 +7,15 @@
     align-items: start;
     justify-content: flex-end;
     gap: var(--space-5);
-    border: 1px solid;
-
-    h1 {
-        .name-heading {
-            background-image: var(--color-primary);
-            background-clip: text;
-            color: transparent;
-        }
-    }
 
     padding-bottom: var(--space-1);
 }
 
+.name-heading {
+    background-image: var(--color-primary);
+    background-clip: text;
+    color: transparent;
+}
 .hero-img {
     max-width: 220px;
     aspect-ratio: 1 / 1;
@@ -41,4 +39,54 @@
         flex: 1;
         max-width: 350px;
     }
+}
+
+/* Projects sektion */
+
+.grid-container {
+    margin-top: var(--space-5);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    place-items: center;
+}
+
+.project-card {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 580px;
+    box-shadow: var(--shadow-card);
+
+    img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        aspect-ratio: 2 / 1.3;
+    }
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-3);
+}
+
+.card-actions {
+    a {
+        display: flex;
+        gap: var(--space-1);
+    }
+    a:hover {
+        color: var(--color-text-hover);
+    }
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 60em) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
 }

@@ -7,6 +7,9 @@
     --color-text-strong: #000;
     --color-text-content: #666666;
 
+    /* Hover & interactios */
+    --color-text-hover: #4b4b4b;
+
     --color-bg: #fff;
     --color-surface: #fff;
 
@@ -77,7 +80,6 @@
   }
   h3 {
     font-size: var(--font-size-heading-3);
-    margin-bottom: var(--space-4);
   }
   h4 {
     font-size: var(--font-size-heading-4);
@@ -115,10 +117,14 @@
     --section-space-inline: var(--space-7);
     --section-space-block: var(--space-7);
   }
+
+  .fs-small {
+    font-size: var(--font-size-300);
+  }
 }
 
 
-/* Layout-styling */
+/* Layout-styling */ /* Utility classes */
 
 .container {
   max-width: 1200px;
@@ -139,3 +145,4 @@
   white-space: nowrap;
   width: 1px;
 }
+
