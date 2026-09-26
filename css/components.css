@@ -98,6 +98,7 @@
         align-items: center;
         flex-direction: row;
         width: fit-content;
+        /* Kanske testa clamp() */
         gap: var(--space-6);
         margin: 0;
     }
