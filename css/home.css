@@ -46,6 +46,9 @@
     grid-template-columns: 1fr;
     gap: var(--space-5);
     place-items: center;
+    li {
+        list-style: none;
+    }
 }
 
 .project-card {
