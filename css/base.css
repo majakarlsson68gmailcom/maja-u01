@@ -9,7 +9,7 @@
     --color-border: #EBEAED;
 
     /* Hover & interactios */
-    --color-text-hover: #4b4b4b;
+    --color-text-hover: #343434;
 
     --color-bg: #fff;
     --color-surface: #fff;
@@ -64,6 +64,13 @@
     font-family: var(--font-body);
     font-size: var(--font-size-body);
     color: var(--color-text);
+
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
   }
 
   h1, h2, h3, h4 {

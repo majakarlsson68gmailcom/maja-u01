@@ -35,6 +35,9 @@
     display: none;
     width: 100%;
     list-style: none;
+    a:hover {
+        color: var(--color-text-hover);
+    }
 }
 
 .nav-list {
