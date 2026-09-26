@@ -6,6 +6,7 @@
     --color-text-muted: #a7a7a7;
     --color-text-strong: #000;
     --color-text-content: #666666;
+    --color-border: #EBEAED;
 
     /* Hover & interactios */
     --color-text-hover: #4b4b4b;
@@ -76,13 +77,14 @@
   }
   h2 {
     font-size: var(--font-size-heading-2);
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4);
   }
   h3 {
     font-size: var(--font-size-heading-3);
   }
   h4 {
     font-size: var(--font-size-heading-4);
+    font-weight: 300;
   }
 
   a {
@@ -108,6 +110,7 @@
 
 @media (min-width: 60em) {
   :root {
+    --font-size-small: var(--font-size-300)
     --font-size-body: var(--font-size-400);
     --font-size-heading-4: var(--font-size-500);
     --font-size-heading-3: var(--font-size-600);
@@ -144,5 +147,11 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.name-heading {
+  background-image: var(--color-primary);
+  background-clip: text;
+  color: transparent;
 }
 
