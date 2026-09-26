@@ -74,6 +74,7 @@
 
   h1 {
     font-size: var(--font-size-heading-1);
+    margin-bottom: var(--space-4);
   }
   h2 {
     font-size: var(--font-size-heading-2);
@@ -110,12 +111,13 @@
 
 @media (min-width: 60em) {
   :root {
-    --font-size-small: var(--font-size-300)
+    --font-size-small: var(--font-size-300);
     --font-size-body: var(--font-size-400);
     --font-size-heading-4: var(--font-size-500);
     --font-size-heading-3: var(--font-size-600);
-    --font-size-heading-2: var(--font-size-700);
-    --font-size-heading-1: var(--font-size-800);
+    --font-size-heading-2: var(--font-size-600);
+    --font-size-heading-1: var(--font-size-600);
+    --font-size-hero: var(--font-size-700);
 
     --section-space-inline: var(--space-7);
     --section-space-block: var(--space-7);

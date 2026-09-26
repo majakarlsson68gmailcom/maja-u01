@@ -11,6 +11,10 @@
     padding-bottom: var(--space-4);
 }
 
+.hero-heading {
+    font-size: var(--font-size-hero);
+    margin-bottom: 0;
+}
 
 .hero-img {
     max-width: 280px;
