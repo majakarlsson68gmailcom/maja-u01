@@ -139,6 +139,7 @@
 /* Layout-styling */ /* Utility classes */
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin-inline: auto;
 }
@@ -164,3 +165,7 @@
   color: transparent;
 }
 
+.hero-heading {
+  font-size: var(--font-size-hero);
+  margin-bottom: 0;
+}

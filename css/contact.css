@@ -1,0 +1,7 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: calc(var(--space-7) * 2);
+    text-align: center;
+   
+}
