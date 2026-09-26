@@ -8,16 +8,12 @@
     justify-content: flex-end;
     gap: var(--space-5);
 
-    padding-bottom: var(--space-1);
+    padding-bottom: var(--space-4);
 }
 
-.name-heading {
-    background-image: var(--color-primary);
-    background-clip: text;
-    color: transparent;
-}
+
 .hero-img {
-    max-width: 220px;
+    max-width: 280px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
