@@ -46,7 +46,7 @@
     --font-size-heading-sm: var(--font-size-400);
     --font-size-heading-md: var(--font-size-500);
     --font-size-heading-lg: var(--font-size-600);
-    --font-size-display: var(--font-size-600);
+    --font-size-display: clamp(1.5rem, 5vw, 3.625rem);
 
     /* Spacing */
     --space-1: 0.5rem; /* 8px */
@@ -93,24 +93,6 @@
   h4 {
     font-size: var(--font-size-heading-sm);
   }
-
-
-
-  /* h1 {
-    font-size: var(--font-size-heading-1);
-    margin-bottom: var(--space-4);
-  }
-  h2 {
-    font-size: var(--font-size-heading-2);
-    margin-bottom: var(--space-4);
-  }
-  h3 {
-    font-size: var(--font-size-heading-3);
-  }
-  h4 {
-    font-size: var(--font-size-heading-4);
-    font-weight: 300;
-  }  */
 
   a {
     color: inherit;
@@ -168,7 +150,6 @@
     --font-size-heading-sm: var(--font-size-500);
     --font-size-heading-md: var(--font-size-500);
     --font-size-heading-lg: var(--font-size-700);
-    --font-size-display: var(--font-size-800);
 
     --section-space-inline: var(--space-7);
     --section-space-block: var(--space-7);
