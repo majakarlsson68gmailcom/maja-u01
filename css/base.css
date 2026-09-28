@@ -46,7 +46,7 @@
     --font-size-heading-sm: var(--font-size-400);
     --font-size-heading-md: var(--font-size-500);
     --font-size-heading-lg: var(--font-size-600);
-    --font-size-display: clamp(1.5rem, 5vw, 3.625rem);
+    --font-size-display: clamp(1.5rem, 0.5rem + 4vw, 3.625rem);
 
     /* Spacing */
     --space-1: 0.5rem; /* 8px */
@@ -63,9 +63,11 @@
 
   /* Generella regler */
   body {
+    background-color: var(--color-bg);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
     color: var(--color-text);
+    line-height: 1.5;
 
     min-height: 100dvh;
     display: flex;
@@ -96,6 +98,10 @@
 
   a {
     color: inherit;
+  }
+
+  p {
+    max-width: 65ch;
   }
 
   :focus-visible {
@@ -161,8 +167,6 @@
 }
 
 
-
-/* Darkmode */
 :root[data-theme="dark"] {
 
     color-scheme: dark;
@@ -173,8 +177,30 @@
     --color-text: #a7a7a7;
     --color-text-content: #CCCCCC; /* I projekt korten */
     --color-text-strong: #fff;
+    --color-text-hover: #fbfbfb;
+}
+:root[data-theme="dark"] .icon-invert {
+  filter: invert(0.8);
 }
 
+/* Darkmode */
+@media (prefers-color-scheme: dark){
+:root {
+  color-scheme: dark;
+
+  --color-bg: #191919;
+  --color-surface: #363636;
+  --color-heading: #CCCCCC;
+  --color-text: #a7a7a7;
+  --color-text-content: #CCCCCC; /* I projekt korten */
+  --color-text-strong: #fff;
+
+  --color-text-hover: #fffdfd;
+}
+.icon-invert {
+  filter: invert(0.8);
+}
+}
 
 
 
