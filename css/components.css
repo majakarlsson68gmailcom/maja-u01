@@ -41,6 +41,7 @@
 }
 
 .nav-list {
+    font-family: var(--font-nav);
     flex-direction: column;
     margin-top: var(--space-4);
     & > * {

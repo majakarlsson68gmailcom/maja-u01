@@ -1,4 +1,5 @@
 
+  /* Variabler */
   :root {
     /* Färger */
     --color-heading: #42446E;
@@ -60,6 +61,7 @@
     --section-space-inline: var(--space-4);
   }
 
+  /* Generella regler */
   body {
     font-family: var(--font-body);
     font-size: var(--font-size-body);
@@ -104,39 +106,15 @@
     outline-offset: 3px;
   }
 
-:root[data-theme="dark"] {
-
-    color-scheme: dark;
-
-    --color-bg: #191919;
-    --color-surface: #363636;
-    --color-heading: #CCCCCC;
-    --color-text: #a7a7a7;
-    --color-text-content: #CCCCCC; /* I projekt korten */
-    --color-text-strong: #fff;
-}
-
-@media (min-width: 60em) {
-  :root {
-    --font-size-small: var(--font-size-300);
-    --font-size-body: var(--font-size-400);
-    --font-size-heading-4: var(--font-size-500);
-    --font-size-heading-3: var(--font-size-500);
-    --font-size-heading-2: var(--font-size-700);
-    --font-size-heading-1: var(--font-size-700);
-    --font-size-hero: var(--font-size-700);
-
-    --section-space-inline: var(--space-7);
-    --section-space-block: var(--space-7);
+  * + h2 {
+    margin-top: var(--space-6);
   }
 
-  .fs-small {
-    font-size: var(--font-size-300);
+  h3:has(+ *) {
+    margin-bottom: var(--space-6);
   }
-}
 
-
-/* Layout-styling */ /* Utility classes */
+  /* Layout-styling */ /* Utility classes */
 
 .container {
   width: 100%;
@@ -164,4 +142,46 @@
   background-clip: text;
   color: transparent;
 }
+
+
+/* Desktop */
+
+@media (min-width: 60em) {
+  :root {
+    --font-size-small: var(--font-size-300);
+    --font-size-body: var(--font-size-400);
+    --font-size-heading-4: var(--font-size-500);
+    --font-size-heading-3: var(--font-size-500);
+    --font-size-heading-2: var(--font-size-700);
+    --font-size-heading-1: var(--font-size-700);
+    --font-size-hero: var(--font-size-700);
+
+    --section-space-inline: var(--space-7);
+    --section-space-block: var(--space-7);
+  }
+
+  .fs-small {
+    font-size: var(--font-size-300);
+  }
+}
+
+
+
+/* Darkmode */
+:root[data-theme="dark"] {
+
+    color-scheme: dark;
+
+    --color-bg: #191919;
+    --color-surface: #363636;
+    --color-heading: #CCCCCC;
+    --color-text: #a7a7a7;
+    --color-text-content: #CCCCCC; /* I projekt korten */
+    --color-text-strong: #fff;
+}
+
+
+
+
+
 
