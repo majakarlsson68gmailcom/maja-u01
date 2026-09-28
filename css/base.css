@@ -43,10 +43,10 @@
     --font-size-label: var(--font-size-100);
     --font-size-small: var(--font-size-200);
     --font-size-body: var(--font-size-300);
-    --font-size-heading-4: var(--font-size-400);
-    --font-size-heading-3: var(--font-size-500);
-    --font-size-heading-2: var(--font-size-600);
-    --font-size-heading-1: var(--font-size-600);
+    --font-size-heading-sm: var(--font-size-400);
+    --font-size-heading-md: var(--font-size-500);
+    --font-size-heading-lg: var(--font-size-600);
+    --font-size-display: var(--font-size-600);
 
     /* Spacing */
     --space-1: 0.5rem; /* 8px */
@@ -81,7 +81,22 @@
     line-height: 1.2;
   }
 
-  h1 {
+  h1, h2 {
+    font-size: var(--font-size-heading-lg);
+    margin-bottom: var(--space-4);
+  }
+
+  h3 {
+    font-size: var(--font-size-heading-md);
+  }
+
+  h4 {
+    font-size: var(--font-size-heading-sm);
+  }
+
+
+
+  /* h1 {
     font-size: var(--font-size-heading-1);
     margin-bottom: var(--space-4);
   }
@@ -95,7 +110,7 @@
   h4 {
     font-size: var(--font-size-heading-4);
     font-weight: 300;
-  }
+  }  */
 
   a {
     color: inherit;
@@ -150,11 +165,10 @@
   :root {
     --font-size-small: var(--font-size-300);
     --font-size-body: var(--font-size-400);
-    --font-size-heading-4: var(--font-size-500);
-    --font-size-heading-3: var(--font-size-500);
-    --font-size-heading-2: var(--font-size-700);
-    --font-size-heading-1: var(--font-size-700);
-    --font-size-hero: var(--font-size-700);
+    --font-size-heading-sm: var(--font-size-500);
+    --font-size-heading-md: var(--font-size-500);
+    --font-size-heading-lg: var(--font-size-700);
+    --font-size-display: var(--font-size-800);
 
     --section-space-inline: var(--space-7);
     --section-space-block: var(--space-7);

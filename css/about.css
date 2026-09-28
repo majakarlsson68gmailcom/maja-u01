@@ -1,8 +1,4 @@
 
-.about-me h3 {
-    font-size: var(--font-size-heading-2);
-}
-
 .about-me {
     p {
         max-width: 65ch;
@@ -22,7 +18,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--space-2);
+    h3 {
+        font-weight: 300;
+        margin-bottom: 0;
+    }
 }
+
 .pill {
     font-size: var(--font-size-label);
     font-weight: 500;
