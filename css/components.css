@@ -43,7 +43,7 @@ header {
     display: none;
     width: 100%;
     list-style: none;
-    a:hover {
+    a:hover, a:focus-visible {
         color: var(--color-text-hover);
     }
 }
