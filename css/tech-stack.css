@@ -1,5 +1,5 @@
 .grid-container-tech {
-    margin-top: var(--space-7);
+    margin-block: var(--space-7);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(80px, 100%), 1fr));
     gap: var(--space-7);
