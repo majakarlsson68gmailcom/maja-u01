@@ -146,7 +146,7 @@
 
 /* Desktop */
 
-@media (min-width: 56em) {
+@media (min-width: 56rem) {
   :root {
     --font-size-small: var(--font-size-300);
     --font-size-body: var(--font-size-400);

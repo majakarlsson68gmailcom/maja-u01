@@ -89,13 +89,20 @@ header {
     display: flex;
 }
 
+/* Animation av hamburger-icon */
 .hamburger-icon path {
     transform-origin: center;
     transition: transform 0.25s, opacity 0.25s;
 }
 
-.nav.nav-toggle[aria-expanded="true"] path:nth-child(1) {
+.nav-toggle[aria-expanded="true"] path:nth-child(1) {
     transform: rotate(45deg) translateY(5px);
+}
+.nav-toggle[aria-expanded="true"] path:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] path:nth-child(3) {
+    transform: rotate(-45deg) translateY(-5px);
 }
 
 /* Delade klasser */
