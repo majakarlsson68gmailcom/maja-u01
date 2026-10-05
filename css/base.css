@@ -155,28 +155,12 @@
     --section-space-block: var(--space-7);
   }
 
+  /* mindre text än body, bara på desktop */
   .fs-small {
     font-size: var(--font-size-300);
   }
 }
 
-/*
-:root[data-theme="dark"] {
-
-    color-scheme: dark;
-
-    --color-bg: #191919;
-    --color-surface: #363636;
-    --color-heading: #CCCCCC;
-    --color-text: #a7a7a7;
-    --color-text-content: #CCCCCC; /* I projekt korten */
-    /*
-    --color-text-strong: #fff;
-    --color-text-hover: #fbfbfb;
-}
-:root[data-theme="dark"] .icon-invert {
-  filter: invert(0.8);
-} */
 
 /* Darkmode */
 @media (prefers-color-scheme: dark){
