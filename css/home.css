@@ -49,9 +49,6 @@
     grid-template-columns: 1fr;
     gap: var(--space-5);
     place-items: center;
-    /* li {
-        list-style: none;
-    } */
 }
 
 .project-card {
@@ -96,7 +93,7 @@
     justify-content: space-between;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 63rem) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
