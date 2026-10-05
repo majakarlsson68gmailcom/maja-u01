@@ -98,9 +98,20 @@ header {
     transform: rotate(45deg) translateY(5px);
 }
 
+/* Delade klasser */
+.name-heading {
+    background-image: var(--color-primary);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .icon {
+    width: 16px;
+    display: inline;
+    margin-right: var(--space-1);
+}
+
 /* Desktop */
-
-
 
 @media (min-width: 56rem){
 

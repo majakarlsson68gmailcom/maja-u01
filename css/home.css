@@ -25,7 +25,7 @@
     background: var(--color-primary) border-box;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 56rem) {
     .hero {
         flex-direction: row;
         align-items: center;

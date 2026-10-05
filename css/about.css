@@ -39,13 +39,9 @@
     }
 }
 
-.icon {
-    width: 16px;
-    display: inline;
-    margin-right: var(--space-1);
-}
 
-@media (min-width: 50em) {
+
+@media (min-width: 56em) {
     .work-details {
         display: flex;
         justify-content: space-between;

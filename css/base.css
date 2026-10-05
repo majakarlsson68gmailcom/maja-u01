@@ -40,6 +40,7 @@
     --font-size-700: 2.625rem;
     --font-size-800: 3.625rem;
     /* Roll */
+
     --font-size-label: var(--font-size-100);
     --font-size-small: var(--font-size-200);
     --font-size-body: var(--font-size-300);
@@ -67,9 +68,7 @@
     font-family: var(--font-body);
     font-size: var(--font-size-body);
     color: var(--color-text);
-    line-height: 1.5;
-
-    min-height: 100dvh;
+   
     display: flex;
     flex-direction: column;
   }
@@ -140,16 +139,14 @@
   width: 1px;
 }
 
-.name-heading {
-  background-image: var(--color-primary);
-  background-clip: text;
-  color: transparent;
+.fs-small {
+  font-size: var(--font-size-body);
 }
 
 
 /* Desktop */
 
-@media (min-width: 60em) {
+@media (min-width: 56em) {
   :root {
     --font-size-small: var(--font-size-300);
     --font-size-body: var(--font-size-400);
@@ -166,7 +163,7 @@
   }
 }
 
-
+/*
 :root[data-theme="dark"] {
 
     color-scheme: dark;
@@ -176,12 +173,13 @@
     --color-heading: #CCCCCC;
     --color-text: #a7a7a7;
     --color-text-content: #CCCCCC; /* I projekt korten */
+    /*
     --color-text-strong: #fff;
     --color-text-hover: #fbfbfb;
 }
 :root[data-theme="dark"] .icon-invert {
   filter: invert(0.8);
-}
+} */
 
 /* Darkmode */
 @media (prefers-color-scheme: dark){
@@ -193,6 +191,7 @@
   --color-heading: #CCCCCC;
   --color-text: #a7a7a7;
   --color-text-content: #CCCCCC; /* I projekt korten */
+  
   --color-text-strong: #fff;
 
   --color-text-hover: #fffdfd;
@@ -201,6 +200,8 @@
   filter: invert(0.8);
 }
 }
+
+ 
 
 
 
