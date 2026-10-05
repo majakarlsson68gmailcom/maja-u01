@@ -1,7 +1,7 @@
 
 /* Hero sektion */
 .hero {
-    height: 80dvh;
+    min-height: 80dvh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -11,10 +11,6 @@
     padding-bottom: var(--space-4);
 }
 
-.hero-heading {
-    font-size: var(--font-size-display);
-    margin-bottom: 0;
-  }
 
 .hero-img {
     max-width: 230px;
@@ -42,6 +38,8 @@
 }
 
 /* Projects sektion */
+
+/* Lägg till scroll-margin-top + att menyn stängs vid klick på projects */
 
 .grid-container {
     margin-top: var(--space-5);
