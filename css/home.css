@@ -40,6 +40,9 @@
 /* Projects sektion */
 
 /* Lägg till scroll-margin-top + att menyn stängs vid klick på projects */
+#projects {
+    scroll-margin-top: 80px;
+}
 
 .grid-container {
     margin-top: var(--space-5);
@@ -94,6 +97,10 @@
 @media (min-width: 63rem) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #projects {
+        scroll-margin-top: 140px;
     }
   
 }
